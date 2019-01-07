@@ -1,0 +1,77 @@
+
+/* Body Style */
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Background Images */
+.bgimg-1 {
+  background-image: url('../images/bgimg-3.png');
+  min-height: 100%;
+  opacity: 0.85;
+  filter: brightness(75%);
+}
+
+.bgimg-2 {
+  background-image: url("../images/bgimg-2.png");
+  min-height: 800px;
+  opacity: 0.75;
+  filter: brightness(75%);
+}
+
+.bgimg-3 {
+  background-image: url("../images/bgimg-1.png");
+  min-height: 100%;
+  opacity: 0.75;
+  filter: brightness(75%);
+}
+
+/* Disable Parallax for Mobile */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/* Main Logo Blinking Animation */
+@keyframes blink {
+  0% {opacity: 0}
+  49%{opacity: 0}
+  50% {opacity: 1}
+}
+blink{animation: blink 1s infinite;}
+
+.infobox-1, .infobox-2 {
+  height: 75%;
+}
+
+
+
+
+/* Center Logo Test */
+.parent{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.center{
+  background-color:rgba(0,0,0,1);
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 24px;
+  padding: 12px 24px;
+  color: white;
+}
