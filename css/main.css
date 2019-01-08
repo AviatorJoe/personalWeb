@@ -5,6 +5,8 @@ body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
+  margin: 0;
+  padding: 0;
 }
 
 /* Parallax Effect */
