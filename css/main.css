@@ -76,3 +76,35 @@ blink{animation: blink 1s infinite;}
   padding: 12px 24px;
   color: white;
 }
+
+
+/* Nav Bar Test */
+.onTop{
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.navbar{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.navitem{
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+.navbutton{
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  -moz-user-select: none;
+}
