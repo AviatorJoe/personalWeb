@@ -58,7 +58,9 @@ blink{animation: blink 1s infinite;}
 
 
 .infobox-1, .infobox-2, .infobox-3, .infobox-4, .infobox-5{
-  height: 75%;
+  height: 90%;
+  padding-top: 55px;
+  margin-top: -55px;
 }
 
 
@@ -89,7 +91,7 @@ blink{animation: blink 1s infinite;}
   z-index: 1;
 }
 .navbar{
-  padding: 10px;
+  padding: 5px;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
