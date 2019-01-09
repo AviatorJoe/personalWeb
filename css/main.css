@@ -56,7 +56,8 @@ body, html {
 
 blink{animation: blink 1s infinite;}
 
-.infobox-1, .infobox-2 {
+
+.infobox-1, .infobox-2, .infobox-3, .infobox-4, .infobox-5{
   height: 75%;
 }
 
@@ -88,6 +89,7 @@ blink{animation: blink 1s infinite;}
   z-index: 1;
 }
 .navbar{
+  padding: 10px;
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -109,4 +111,8 @@ blink{animation: blink 1s infinite;}
   text-align: center;
   cursor: pointer;
   -moz-user-select: none;
+}
+a:hover{
+  background-color: rgba(0,0,0,0.25);
+  color: lightgrey;
 }
