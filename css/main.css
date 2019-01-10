@@ -58,8 +58,8 @@ blink{animation: blink 1s infinite;}
 
 .infobox-1, .infobox-2, .infobox-3, .infobox-4, .infobox-5{
   height: 90%;
-  padding-top: 55px;
-  margin-top: -55px;
+  padding-top: 50px;
+  margin-top: -50px;
 }
 
 
@@ -90,6 +90,7 @@ blink{animation: blink 1s infinite;}
   z-index: 1;
 }
 .navbar{
+  padding: 8px 16px;
   float: left;
   width: 100%;
   border: none;
@@ -105,19 +106,19 @@ blink{animation: blink 1s infinite;}
   outline: 0;
   overflow: hidden;
   text-decoration: none;
-  color: inherit;
-  background-color: inherit;
+  color: lightgray;
   text-align: center;
   cursor: pointer;
 }
 .navbarscroll{
+  padding: 8px 16px;
   float: left;
   width: 100%;
   border: none;
   display: block;
   outline: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: rgba(0,0,0,0.75);
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   position: relative;
   animation: animatetop 0.4s;
@@ -133,6 +134,6 @@ blink{animation: blink 1s infinite;}
   }
 }
 a:hover{
-  background-color: rgba(0,0,0,0.25);
-  color: lightgrey;
+  background-color: rgba(255,255,255,0.25);
+  color: black;
 }
