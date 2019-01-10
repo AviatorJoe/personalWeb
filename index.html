@@ -80,6 +80,20 @@
     <!-- =============== Image Separator =============== -->
     <div class="bgimg-3"></div>
 
+  <script>
+    // =============== Scrolled NavBar Script ===============
+    window.onscroll = function () {scrollNavBar()};
+    function scrollNavBar() {
+      var navbar = document.getElementById("NavBar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+        navbar.className = "navbarscroll";
+      }
+      else{
+        navbar.className = navbar.className.replace("navbarscroll" , "navbar");
+      }
+    }
+  </script>
+
   </body>
 
 </html>
