@@ -97,6 +97,7 @@ blink{animation: blink 1s infinite;}
   display: block;
   outline: 0;
   overflow: hidden;
+  box-sizing: border-box;
 }
 .navbutton {
   padding: 8px 16px;
@@ -109,6 +110,9 @@ blink{animation: blink 1s infinite;}
   color: lightgray;
   text-align: center;
   cursor: pointer;
+}
+.navmobilebutton{
+  float: right;
 }
 .navbarscroll{
   padding: 8px 16px;
@@ -133,13 +137,27 @@ blink{animation: blink 1s infinite;}
     opacity: 1;
   }
 }
+@media (min-width: 993px) {
+  .largehide {
+    display: none;
+  }
+}
+@media (max-width: 600px){
+  .smallhide{
+    display: none;
+  }
+}
 .navbarsmall{
   width: 100%;
   min-width: 100%;
   text-align: left;
   padding: 8px 16px;
+  vertical-align: middle;
 }
-.smallshow{
+.barhide{
+  display: none;
+}
+.barshow{
   display: block;
 }
 a:hover{
