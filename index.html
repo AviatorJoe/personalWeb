@@ -24,6 +24,7 @@
     <!-- =============== Nav Bar =============== -->
     <div class="onTop">
       <div class="navbar" id="NavBar">
+
         <a class="navbutton" href="#Home">HOME</a>
         <a class="navbutton" href="#About">ABOUT</a>
         <a class="navbutton" href="#Videos">VIDEOS</a>
@@ -31,6 +32,14 @@
         <a class="navbutton" href="#Portfolio">PORTFOLIO</a>
         <a class="navbutton" href="#Contact">CONTACT</a>
       </div>
+    </div>
+    <!-- =============== Nav Bar Mobile =============== -->
+    <div id="navbarsmall" class="">
+      <a href="#About" class="navbutton" onclick="toggleFunction()">ABOUT</a>
+      <a href="#Videos" class="navbutton" onclick="toggleFunction()">VIDEOS</a>
+      <a href="#Twitch" class="navbutton" onclick="toggleFunction()">TWITCH</a>
+      <a href="#Portfolio" class="navbutton" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#Contact" class="navbutton" onclick="toggleFunction()">CONTACT</a>
     </div>
 
     <!-- =============== Home Div =============== -->
@@ -82,6 +91,7 @@
 
     <!-- =============== Page Scripts =============== -->
   <script>
+
     // =============== Scrolled NavBar Script ===============
     window.onscroll = function () {scrollNavBar()};
     function scrollNavBar() {
@@ -91,6 +101,17 @@
       }
       else{
         navbar.className = navbar.className.replace("navbarscroll" , "navbar");
+      }
+    }
+
+    // =============== Mobile NavBar Script ===============
+    function toggleFunction(){
+      var x = document.getElementById("navbarsmall")
+      if (x.className.indexOf("smallshow") == -1){
+        x.className += "smallshow";
+      }
+      else{
+        x.className = x.className.replace("smallshow", " ");
       }
     }
   </script>
