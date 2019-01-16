@@ -6,6 +6,7 @@ body, html {
   line-height: 1.8;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 /* Parallax Effect */
