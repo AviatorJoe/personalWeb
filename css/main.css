@@ -65,8 +65,8 @@ blink{animation: blink 1s infinite;}
 
 
 .about, .infobox-2, .infobox-3, .infobox-4, .infobox-5{
-  padding-top: 50px;
-  margin-top: -50px;
+  padding-top: 200px;
+  margin-top: -200px;
 }
 
 
