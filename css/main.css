@@ -64,8 +64,7 @@ body, html {
 blink{animation: blink 1s infinite;}
 
 
-.infobox-1, .infobox-2, .infobox-3, .infobox-4, .infobox-5{
-  height: 90%;
+.about, .infobox-2, .infobox-3, .infobox-4, .infobox-5{
   padding-top: 50px;
   margin-top: -50px;
 }
@@ -197,13 +196,6 @@ a:hover{
 
 
 /* Content Div Styling */
-.about{
-  background-color: rgba(255,255,255,1);
-  brightness: 75%;
-  height: 100%;
-  width: 100%;
-  color: black;
-}
 .youtube{
   background-color: rgba(50,50,50,1);
   brightness: 75%;
@@ -222,33 +214,38 @@ a:hover{
 
 /* About Me Section */
 .aboutContainer{
-  display: block;
   max-width: 980px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 64px;
   padding-bottom: 64px;
   padding: 16px;
-  box-sizing: inherit;
+  background-color: rgba(255,255,255,1);
+  overflow: hidden;
 }
-
 .aboutMe{
-  display: block;
   text-align: center;
   font-weight: 400;
   margin: 10px 0;
   font-size: 24px;
-  box-sizing: inherit;
   color: #777;
 }
 .aboutMeRow{
-  width: 49.99999%;
+  width: 40%;
   padding: 12px 24px;
   text-align: center;
+  color: #777;
+  display: inline-block;
   float: left;
-  display: box;
-  box-sizing: inherit;
-  color: #777
+}
+.aboutMeRowInfo{
+  margin-top: 24px;
+  width: 40%;
+  padding: 12px 24px;
+  text-align: left;
+  color: #777;
+  display: inline-block;
+  float: left;
 }
 .aboutMeImage{
   opacity: 0.85;
@@ -256,7 +253,5 @@ a:hover{
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-  border-style: none;
-  box-sizing: inherit;
   text-align: center
 }
